@@ -171,17 +171,36 @@ footer {
 .thumb {
   display: block;
   cursor: pointer;
+  position: relative;
 }
 
 .thumb img {
   width: 100%;
   height: auto;
   display: block;
-  transition: opacity 0.2s;
+  transition: opacity 0.25s;
 }
 
 .thumb:hover img {
-  opacity: 0.88;
+  opacity: 0.15;
+}
+
+.thumb-label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+  font-size: 20px;
+  color: var(--accent);
+  opacity: 0;
+  transition: opacity 0.25s;
+  pointer-events: none;
+}
+
+.thumb:hover .thumb-label {
+  opacity: 1;
 }
 
 /* work category page columns */
