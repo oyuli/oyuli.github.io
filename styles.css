@@ -99,13 +99,21 @@ footer {
 }
 
 /* mouse decoration */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
 .mouse-deco {
   position: fixed;
   bottom: 10px;
   right: 10px;
   width: 155px;
-  pointer-events: none;
   z-index: 10;
+  cursor: pointer;
+}
+
+.mouse-deco:hover {
+  animation: spin 7.0s linear infinite;
 }
 
 /* home page */
