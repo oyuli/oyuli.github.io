@@ -55,6 +55,41 @@ nav a:hover {
   color: var(--accent);
 }
 
+/* work dropdown */
+.nav-work {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.work-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bg);
+  border: 1px solid rgba(160, 152, 136, 0.3);
+  padding: 12px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+  z-index: 200;
+}
+
+.nav-work:hover .work-dropdown {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.work-dropdown a {
+  font-size: 15px;
+  font-style: italic;
+}
+
 /* overall footer */
 footer {
   text-align: center;
