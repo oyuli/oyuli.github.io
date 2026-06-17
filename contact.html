@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>contact — Anna Wang</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <a href="index.html"><img src="assets/logo.png" alt="Anna Wang" class="logo"></a>
+    <nav>
+      <a href="index.html">home</a>
+      <a href="about.html">about</a>
+      <a href="work.html">work</a>
+      <a href="cv.html">cv</a>
+      <a href="contact.html" class="active">contact</a>
+    </nav>
+  </header>
+
+  <main class="contact-main">
+    <form class="contact-form" action="#" method="post">
+
+      <div class="form-group">
+        <label class="form-label">name</label>
+        <div class="form-sublabels">
+          <span class="form-sublabel">first</span>
+          <span class="form-sublabel">last</span>
+        </div>
+        <div class="name-inputs">
+          <input type="text" name="first" placeholder="enter first name...">
+          <input type="text" name="last" placeholder="enter last name...">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="email">email</label>
+        <input type="email" id="email" name="email" placeholder="enter email...">
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="subject">subject</label>
+        <input type="text" id="subject" name="subject" placeholder="enter subject...">
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="message">message</label>
+        <textarea id="message" name="message" placeholder="enter message..."></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">submit</button>
+
+    </form>
+  </main>
+
+  <footer>© 2026 by Anna Wang</footer>
+
+  <img src="assets/mouse.png" alt="" class="mouse-deco">
+
+</body>
+</html>
