@@ -105,9 +105,9 @@ footer {
 
 .mouse-deco {
   position: fixed;
-  bottom: 10px;
-  right: 10px;
-  width: 155px;
+  bottom: 24px;
+  right: 24px;
+  width: 194px;
   z-index: 10;
   cursor: pointer;
 }
@@ -153,7 +153,7 @@ footer {
 .about-main {
   flex: 1;
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: minmax(0, 680px) auto;
   gap: 50px;
   padding: 40px 80px 60px 130px;
   align-items: start;
@@ -181,7 +181,7 @@ footer {
 }
 
 .portrait-framed {
-  width: 240px;
+  width: 336px;
   margin-top: 20px;
 }
 
@@ -471,4 +471,10 @@ textarea {
 .submit-btn:hover {
   background: var(--accent);
   color: #fff;
+}
+
+.submit-btn.resubmit {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
 }
